@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Silvaris Stones</title>
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Playfair+Display&display=swap" rel="stylesheet">
+
     <style>
         body {
             background-color: #2f2f2f;
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             text-align: center;
             color: white;
         }
@@ -20,22 +23,26 @@
             margin: auto;
         }
 
+        /* 🖼️ LOGO */
         img.logo {
-            max-width: 220px;
-            width: 80%;
+            max-width: 140px;
+            width: 60%;
             height: auto;
             margin-top: 20px;
         }
 
-        .desciption {
+        /* ✍️ OPIS */
+        .description {
             color: gold;
-            font-size: 13px;
-            font-family: Arial;
+            font-size: 22px;
+            font-family: 'Playfair Display', serif;
             margin: 20px auto;
             line-height: 1.6;
             padding: 0 10px;
+            text-align: center;
         }
 
+        /* 🔘 PRZYCISK */
         .btn {
             display: inline-block;
             background-color: #007BFF;
@@ -52,21 +59,22 @@
             background-color: #0056b3;
         }
 
+        /* 📦 PRODUKTY */
         .products {
             margin-top: 35px;
             font-size: 18px;
             font-weight: bold;
         }
 
-        /* 🔽 MOBILE 🔽 */
+        /* 📱 MOBILE */
         @media (max-width: 600px) {
 
             img.logo {
-                max-width: 160px;
+                max-width: 110px;
             }
 
             .description {
-                font-size: 14px;
+                font-size: 19px;
             }
 
             .btn {
@@ -80,32 +88,36 @@
             }
         }
 
-        /* 🔼 TABLET 🔼 */
-        @media (min-width: 601px) and (max-width: 1024px) {
-
-            img.logo {
-                max-width: 200px;
-            }
-
-            .description {
-                font-size: 14px;
-            }
-
-            .btn {
-                font-size: 17px;
-                padding: 14px 28px;
-            }
-        }
-
     </style>
 </head>
+
 <body>
 
     <div class="container">
 
-        <!-- Logo -->
-        <img src="IMG-20260414-WA0000.jpg"
+        <!-- 🖼️ LOGO -->
+        <img src="IMG-20260414-WA0000.jpg" alt="Silvaris Stones Logo" class="logo">
 
+        <!-- ✍️ OPIS -->
+        <p class="description">
+            Wykonujemy biżuterie z kamieni naturalnych oraz stali jubilerskiej.
+            Tworzymy z pasją i zaangażowaniem dla lepszej jakości dla ciebie.
+            Jest możliwość zamówienia biżuterii indywidualnej oraz spersonalizowanej.
+            Jesteś zainteresowany/a? Zapraszam do kontaktu! 😊
+        </p>
+
+        <!-- 🔘 PRZYCISK -->
+        <a href="mailto:mobilekstudio@gmail.com" class="btn">Kontakt</a>
+
+        <!-- 📦 PRODUKTY -->
+        <p class="products">
+            Aktualne produkty na stanie:
+        </p>
+
+    </div>
+
+</body>
+</html>
         <!-- Opis -->
         <p class="description">
             Wykonujemy biżuterie z kamieni naturalnych oraz stali jubilerskiej.
