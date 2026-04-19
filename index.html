@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silvaris Stones</title>
+
+    <style>
+        body {
+            background-color: #2f2f2f;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        img.logo {
+            max-width: 220px;
+            width: 80%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        .description {
+            color: gold;
+            font-size: 13px;
+            font-family: cursive;
+            margin: 20px auto;
+            line-height: 1.6;
+            padding: 0 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #007BFF;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-size: 16px;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .products {
+            margin-top: 35px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* 🔽 MOBILE 🔽 */
+        @media (max-width: 600px) {
+
+            img.logo {
+                max-width: 160px;
+            }
+
+            .description {
+                font-size: 14px;
+            }
+
+            .btn {
+                width: 80%;
+                font-size: 18px;
+                padding: 15px;
+            }
+
+            .products {
+                font-size: 20px;
+            }
+        }
+
+        /* 🔼 TABLET 🔼 */
+        @media (min-width: 601px) and (max-width: 1024px) {
+
+            img.logo {
+                max-width: 200px;
+            }
+
+            .description {
+                font-size: 14px;
+            }
+
+            .btn {
+                font-size: 17px;
+                padding: 14px 28px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Logo -->
+        <img src="logo.png" alt="Silvaris Stones Logo" class="logo">
+
+        <!-- Opis -->
+        <p class="description">
+            Wykonujemy biżuterie z kamieni naturalnych oraz stali jubilerskiej.
+            Tworzymy z pasją i zaangażowaniem dla lepszej jakości dla ciebie.
+            Jest możliwość zamówienia biżuterii indywidualnej oraz spersonalizowanej.
+            Jesteś zainteresowany/a? Zapraszam do kontaktu! 😊
+        </p>
+
+        <!-- Przycisk -->
+        <a href="mailto:twojemail@example.com" class="btn">Kontakt</a>
+
+        <!-- Produkty -->
+        <p class="products">
+            Aktualne produkty na stanie:
+        </p>
+
+    </div>
+
+</body>
+  </html>
