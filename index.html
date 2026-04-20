@@ -19,19 +19,18 @@
 
         .container {
             padding: 20px;
-            max-width: 900px;
+            max-width: 1000px;
             margin: auto;
         }
 
-        /* 🖼️ LOGO */
+        /* LOGO */
         img.logo {
             max-width: 140px;
             width: 60%;
-            height: auto;
             margin-top: 20px;
         }
 
-        /* ✍️ OPIS */
+        /* OPIS */
         .description {
             color: gold;
             font-size: 22px;
@@ -39,10 +38,9 @@
             margin: 20px auto;
             line-height: 1.6;
             padding: 0 10px;
-            text-align: center;
         }
 
-        /* 🔘 PRZYCISK */
+        /* PRZYCISK */
         .btn {
             display: inline-block;
             background-color: #007BFF;
@@ -52,39 +50,64 @@
             font-size: 16px;
             text-decoration: none;
             margin-top: 10px;
-            transition: 0.3s;
         }
 
-        .btn:hover {
-            background-color: #0056b3;
+        .products-title {
+            margin-top: 40px;
+            font-size: 22px;
+            font-weight: bold;
         }
 
-        /* 📦 PRODUKTY */
-        .products {
-            margin-top: 35px;
+        /* GRID */
+        .products-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            margin-top: 20px;
+            justify-items: center;
+        }
+
+        .product {
+            background-color: #3a3a3a;
+            padding: 20px;
+            border-radius: 12px;
+            max-width: 350px;
+        }
+
+        /* DUŻY PRODUKT */
+        .product-large img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 12px;
+        }
+
+        .product-name {
+            margin-top: 15px;
             font-size: 18px;
             font-weight: bold;
         }
 
-        /* 📱 MOBILE */
+        .product-desc {
+            margin-top: 10px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .product-price {
+            color: gold;
+            font-weight: bold;
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        /* MOBILE */
         @media (max-width: 600px) {
-
-            img.logo {
-                max-width: 250px;
-            }
-
             .description {
                 font-size: 19px;
             }
 
-            .btn {
-                width: 80%;
-                font-size: 18px;
-                padding: 15px;
-            }
-
-            .products {
-                font-size: 20px;
+            .product {
+                max-width: 90%;
             }
         }
 
@@ -93,24 +116,50 @@
 
 <body>
 
-    <div class="container">
+<div class="container">
 
-        <!-- 🖼️ LOGO -->
-        <img src="IMG-20260414-WA0000.jpg" alt="Silvaris Stones Logo" class="logo">
+    <!-- LOGO -->
+    <img src="IMG-20260414-WA0000.jpg" class="logo">
 
-        <!-- ✍️ OPIS -->
-        <p class="description">
-            Wykonujemy biżuterie z kamieni naturalnych oraz stali jubilerskiej.
-            Tworzymy z pasją i zaangażowaniem dla lepszej jakości dla ciebie.
-            Jest możliwość zamówienia biżuterii indywidualnej oraz spersonalizowanej.
-            Jesteś zainteresowany/a? Zapraszam do kontaktu! 😊
-        </p>
+    <!-- OPIS -->
+    <p class="description">
+        Wykonujemy biżuterie z kamieni naturalnych oraz stali jubilerskiej.
+        Tworzymy z pasją i zaangażowaniem dla lepszej jakości dla ciebie.
+        Jest możliwość zamówienia biżuterii indywidualnej oraz spersonalizowanej.
+        Jesteś zainteresowany/a? Zapraszam do kontaktu! 😊
+    </p>
 
-        <!-- 🔘 PRZYCISK -->
-        <a href="https://wa.me/48732791814" class="btn">Kontakt na WhatsApp</a>
-        <!-- 📦 PRODUKTY -->
-        <p class="products">
-            Aktualne produkty na stanie:
-        </p>
+    <!-- PRZYCISK -->
+    <a href="mailto:mobilekstudio@gmail.com" class="btn">Kontakt</a>
+
+    <!-- TYTUŁ -->
+    <p class="products-title">Aktualne produkty na stanie:</p>
+
+    <!-- PRODUKTY -->
+    <div class="products-grid">
+
+        <div class="product product-large">
+            <img src="Naszyjnik srebrny z perłami i zawieszką.jpg" alt="Naszyjnik z pereł">
+
+            <div class="product-name">
+                Naszyjnik z pereł syntetycznych i zawieszką
+            </div>
+
+            <div class="product-desc">
+                Elegancki naszyjnik wykonany na srebrnym metalu jubilerskim ✨,
+                z dodatkami srebrnymi oraz perłami syntetycznymi ⚪ i zawieszką.
+                <br><br>
+                Klasyczny i ponadczasowy – idealny na co dzień oraz na wyjątkowe okazje 💫.
+            </div>
+
+            <div class="product-price">
+                25 zł
+            </div>
+        </div>
 
     </div>
+
+</div>
+
+</body>
+</html>
