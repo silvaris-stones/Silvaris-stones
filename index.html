@@ -118,23 +118,26 @@
 
 <div class="container">
 
-    <!-- LOGO -->
-    <img src="IMG-20260414-WA0000.jpg" class="logo">
+    <img src="IMG-20260414-WA0000.jpg" class="logo" alt="Silvaris Stones logo">
 
-    <!-- OPIS -->
     <p class="description">
-        Wykonujemy biżuterie z kamieni naturalnych oraz stali jubilerskiej.
-        Tworzymy z pasją i zaangażowaniem dla lepszej jakości dla ciebie.
+        Wykonujemy biżuterię z kamieni naturalnych oraz stali jubilerskiej.
+        Tworzymy z pasją i zaangażowaniem dla lepszej jakości dla Ciebie.
         Jest możliwość zamówienia biżuterii indywidualnej oraz spersonalizowanej.
         Jesteś zainteresowany/a? Zapraszam do kontaktu! 😊
     </p>
 
-    <!-- PRZYCISK -->
-    <a href="https://wa.me/48791924701" class="btn" target="_blank">Napisz na WhatsApp</a>
-    <!-- TYTUŁ -->
-    <p class="products-title">Aktualne produkty na stanie:</p>
+    <button class="btn" onclick="toggleMainContact()">
+        Kup teraz / Kontakt 📩
+    </button>
 
-    <!-- PRODUKTY -->
+    <div class="contact-box" id="mainContactBox">
+        <button onclick="wa('Kontakt ogólny - Silvaris Stones')">WhatsApp</button>
+        <button onclick="sms('Kontakt ogólny - Silvaris Stones')">SMS</button>
+        <button onclick="mail('Kontakt ogólny - Silvaris Stones')">Email</button>
+    </div>
+
+    <p class="products-title">Aktualne produkty na stanie:</p>
     <div class="products-grid">
 
         <div class="product product-large">
@@ -153,6 +156,12 @@
 
             <div class="product-price">
                 25 zł
+<button class="btn" onclick="toggleContact(this)">Kup teraz</button>
+<div class="contact-box">
+<button onclick="wa('Hematyt 20zl')">WhatsApp</button>
+<button onclick="sms('Hematyt 20zl')">SMS</button>
+<button onclick="mail('Hematyt 20zl')">Email</button>
+
             </div>
         </div>
 
@@ -279,14 +288,6 @@ body {
 }
 </style>
 </head>
-
-<body>
-
-<div class="container">
-
-<img src="IMG-20260414-WA0000.jpg" class="logo">
-
-<p>Wykonujemy biżuterię z kamieni naturalnych ✨</p>
 
 <!-- ================= 1 ================= -->
 <div class="product">
