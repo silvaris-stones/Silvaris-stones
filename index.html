@@ -158,199 +158,342 @@
 
     </div>
 
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silvaris Stones</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Playfair+Display&display=swap" rel="stylesheet">
+
+<style>
+body {
+    background-color: #2f2f2f;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* LOGO */
+.logo {
+    max-width: 140px;
+    margin-top: 20px;
+}
+
+/* PRODUKT */
+.product {
+    background: #3a3a3a;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 30px;
+}
+
+/* SLIDER */
+.slider {
+    position: relative;
+    max-width: 300px;
+    margin: auto;
+}
+
+.slider img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 12px;
+    display: none;
+    margin: auto;
+}
+
+.slider img.active {
+    display: block;
+}
+
+/* ARROWS */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.left { left: 0; }
+.right { right: 0; }
+
+/* TEXT */
+.product-name {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.product-desc {
+    font-size: 14px;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* CENA */
+.price {
+    color: gold;
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* BUTTON */
+.btn {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+/* CONTACT */
+.contact-box {
+    display: none;
+    margin-top: 10px;
+}
+
+.contact-box button {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<img src="IMG-20260414-WA0000.jpg" class="logo">
+
+<p>Wykonujemy biżuterię z kamieni naturalnych ✨</p>
+
+<!-- ================= 1 ================= -->
+<div class="product">
+<div class="slider">
+<img src="Biały Hematyt Niebieski Hematyt.png" class="active">
+<img src="Bransoletka z kamieni naturalnych Biały i Niebieski Hematyt.png">
+<button class="arrow left" onclick="prev(this.parentElement)">⬅</button>
+<button class="arrow right" onclick="next(this.parentElement)">➡</button>
 </div>
+
+<div class="product-name">
+Naszyjnik – Biały i Niebieski Hematyt ⚪💙♦️
+</div>
+
+<div class="product-desc">
+Elegancki naszyjnik wykonany z:<br>
+Białego Hematytu 🤍<br>
+Niebieskiego Hematytu 💙<br><br>
+Srebrne dodatki ✨ i drut jubilerski.
+</div>
+
+<div class="price">20 zł</div>
+
+<button class="btn" onclick="toggleContact(this)">Kup teraz</button>
+<div class="contact-box">
+<button onclick="wa('Hematyt 20zl')">WhatsApp</button>
+<button onclick="sms('Hematyt 20zl')">SMS</button>
+<button onclick="mail('Hematyt 20zl')">Email</button>
+</div>
+</div>
+
+<!-- ================= 2 ================= -->
+<div class="product">
+<div class="slider">
+<img src="Bransoleka z kamieni naturalnych - Jadeit, Kwarc Różowy i Tygrysie oko.png" class="active">
+<img src="Bransoleka z kamieni naturalnych - Jadeit, Kwarc Różowy i Tygrysie oko2.png">
+<img src="Bransoleka z kamieni naturalnych - Jadeit, Kwarc Różowy i Tygrysie oko3.png">
+
+<button class="arrow left" onclick="prev(this.parentElement)">⬅</button>
+<button class="arrow right" onclick="next(this.parentElement)">➡</button>
+</div>
+
+<div class="product-name">
+Bransoletka – Jadeit, Kwarc Różowy, Tygrysie Oko ♉
+</div>
+
+<div class="product-desc">
+Jadeit 🟢, Kwarc Różowy 💕, Tygrysie Oko 🐅<br>
+Zawieszka Byk ♉
+</div>
+
+<div class="price">20 zł</div>
+
+<button class="btn" onclick="toggleContact(this)">Kup teraz</button>
+<div class="contact-box">
+<button onclick="wa('Jadeit 20zl')">WhatsApp</button>
+<button onclick="sms('Jadeit 20zl')">SMS</button>
+<button onclick="mail('Jadeit 20zl')">Email</button>
+</div>
+</div>
+
+<!-- ================= 3 ================= -->
+<div class="product">
+<div class="slider">
+<img src="Naszyjnik z kamieni naturalnych - Kwarc Górski i Czarny Turmalin z zawieszką.png" class="active">
+
+<button class="arrow left" onclick="prev(this.parentElement)">⬅</button>
+<button class="arrow right" onclick="next(this.parentElement)">➡</button>
+</div>
+
+<div class="product-name">
+Kwarc Górski + Czarny Turmalin ⚫⚪
+</div>
+
+<div class="product-desc">
+Monety celtyckie 🍀 i zawieszka ✨
+</div>
+
+<div class="price">25 zł</div>
+
+<button class="btn" onclick="toggleContact(this)">Kup teraz</button>
+<div class="contact-box">
+<button onclick="wa('Turmalin 25zl')">WhatsApp</button>
+<button onclick="sms('Turmalin 25zl')">SMS</button>
+<button onclick="mail('Turmalin 25zl')">Email</button>
+</div>
+</div>
+
+<!-- ================= 4 ================= -->
+<div class="product">
+<div class="slider">
+<img src="Bransoletka z kamieni naturalnych – Czarny Turmalin i Fioletowy Jadeit1.png" class="active">
+<img src="Bransoletka z kamieni naturalnych – Czarny Turmalin i Fioletowy Jadeit2.png">
+<img src="Bransoletka z kamieni naturalnych – Czarny Turmalin i Fioletowy Jadeit3.png">
+
+<button class="arrow left" onclick="prev(this.parentElement)">⬅</button>
+<button class="arrow right" onclick="next(this.parentElement)">➡</button>
+</div>
+
+<div class="product-name">
+Turmalin + Jadeit 💜
+</div>
+
+<div class="product-desc">
+Czarny Turmalin 🖤 + Fioletowy Jadeit 💜
+</div>
+
+<div class="price">15 zł</div>
+
+<button class="btn" onclick="toggleContact(this)">Kup teraz</button>
+<div class="contact-box">
+<button onclick="wa('Turmalin Jadeit 15zl')">WhatsApp</button>
+<button onclick="sms('Turmalin Jadeit 15zl')">SMS</button>
+<button onclick="mail('Turmalin Jadeit 15zl')">Email</button>
+</div>
+</div>
+
+<!-- ================= 5 ================= -->
+<div class="product">
+<div class="slider">
+<img src="Naszyjnik z kamieni naturalnych – Biały Hematyt i Ametyst.png" class="active">
+
+<button class="arrow left" onclick="prev(this.parentElement)">⬅</button>
+<button class="arrow right" onclick="next(this.parentElement)">➡</button>
+</div>
+
+<div class="product-name">
+Biały Hematyt + Ametyst 💜
+</div>
+
+<div class="product-desc">
+Złote liście 🌿 i rozetka ✨
+</div>
+
+<div class="price">40 zł</div>
+
+<button class="btn" onclick="toggleContact(this)">Kup teraz</button>
+<div class="contact-box">
+<button onclick="wa('Ametyst 40zl')">WhatsApp</button>
+<button onclick="sms('Ametyst 40zl')">SMS</button>
+<button onclick="mail('Ametyst 40zl')">Email</button>
+</div>
+</div>
+
+<!-- ================= 6 ================= -->
+<div class="product">
+<div class="slider">
+<img src="Bransoletka czerwony koral.png" class="active">
+<img src="Bransoletka czerwony koral2.png">
+<img src="Bransoletka czerwony koral3.png">
+
+<button class="arrow left" onclick="prev(this.parentElement)">⬅</button>
+<button class="arrow right" onclick="next(this.parentElement)">➡</button>
+</div>
+
+<div class="product-name">
+Czerwony Koral 🔴
+</div>
+
+<div class="product-desc">
+Ręcznie robione ✨ unikalne
+</div>
+
+<div class="price">20 zł</div>
+
+<button class="btn" onclick="toggleContact(this)">Kup teraz</button>
+<div class="contact-box">
+<button onclick="wa('Koral 20zl')">WhatsApp</button>
+<button onclick="sms('Koral 20zl')">SMS</button>
+<button onclick="mail('Koral 20zl')">Email</button>
+</div>
+</div>
+
+</div>
+
+<script>
+function next(slider){
+let imgs = slider.querySelectorAll("img");
+let i = [...imgs].findIndex(x => x.classList.contains("active"));
+imgs[i].classList.remove("active");
+imgs[(i+1)%imgs.length].classList.add("active");
+}
+
+function prev(slider){
+let imgs = slider.querySelectorAll("img");
+let i = [...imgs].findIndex(x => x.classList.contains("active"));
+imgs[i].classList.remove("active");
+imgs[(i-1+imgs.length)%imgs.length].classList.add("active");
+}
+
+function toggleContact(btn){
+let box = btn.nextElementSibling;
+box.style.display = box.style.display === "block" ? "none" : "block";
+}
+
+function wa(p){
+window.open("https://wa.me/48791924701?text=" + encodeURIComponent("Chcę kupić: " + p));
+}
+
+function sms(p){
+window.open("sms:511250685?body=" + encodeURIComponent("Chcę kupić: " + p));
+}
+
+function mail(p){
+window.location.href = "mailto:?subject=Zamówienie&body=" + encodeURIComponent("Chcę kupić: " + p);
+}
+</script>
 
 </body>
 </html>
-<div class="product">
-  <div class="slider">
-    <img src="Biały Hematyt Niebieski Hematyt.png" class="active">
-    <img src="Bransoletka z kamieni naturalnych Biały i Niebieski Hematyt.png">
-
-    <button class="arrow left" onclick="prev(this.parentElement)">⬅</button>
-    <button class="arrow right" onclick="next(this.parentElement)">➡</button>
-  </div>
-
-  <div class="product-name">
-    Naszyjnik z kamieni naturalnych – Biały i Niebieski Hematyt ⚪💙♦️
-  </div>
-
-  <div class="product-desc">
-    Elegancki naszyjnik wykonany z:<br>
-    Białego Hematytu 🤍<br>
-    Niebieskiego Hematytu 💙<br><br>
-
-    Wykończony srebrnymi dodatkami ✨ oraz srebrnym drutem jubilerskim.<br>
-    Stylowy i wyjątkowy – idealny zarówno na co dzień, jak i na specjalne okazje 💫.
-  </div>
-
-  <div class="price">20 zł</div>
-
-  <button class="btn" onclick="toggleContact(this)">Kup teraz</button>
-  <div class="contact-box">
-    <button onclick="wa('Hematyt 20zl')">WhatsApp</button>
-    <button onclick="sms('Hematyt 20zl')">SMS</button>
-    <button onclick="mail('Hematyt 20zl')">Email</button>
-  </div>
-</div>
-
-<div class="product">
-  <div class="slider">
-    <img src="Bransoleka z kamieni naturalnych - Jadeit, Kwarc Różowy i Tygrysie oko.png" class="active">
-    <img src="Bransoleka z kamieni naturalnych - Jadeit, Kwarc Różowy i Tygrysie oko2.png">
-    <img src="Bransoleka z kamieni naturalnych - Jadeit, Kwarc Różowy i Tygrysie oko3.png">
-
-    <button class="arrow left" onclick="prev(this.parentElement)">⬅</button>
-    <button class="arrow right" onclick="next(this.parentElement)">➡</button>
-  </div>
-
-  <div class="product-name">
-    Bransoletka z kamieni naturalnych – Jadeit, Kwarc Różowy i Tygrysie Oko 🟢🩷🟤♉
-  </div>
-
-  <div class="product-desc">
-    Piękna bransoletka wykonana z:<br>
-    Jadeitu 🟢<br>
-    Kwarcu Różowego 💕<br>
-    Tygrysiego Oka 🐅<br><br>
-
-    Ozdobiona zawieszką znaku zodiaku Byk ♉,<br>
-    na srebrnym metalu jubilerskim ✨.
-  </div>
-
-  <div class="price">20 zł</div>
-
-  <button class="btn" onclick="toggleContact(this)">Kup teraz</button>
-  <div class="contact-box">
-    <button onclick="wa('Jadeit 20zl')">WhatsApp</button>
-    <button onclick="sms('Jadeit 20zl')">SMS</button>
-    <button onclick="mail('Jadeit 20zl')">Email</button>
-  </div>
-</div>
-
-<div class="product">
-  <div class="slider">
-    <img src="Naszyjnik z kamieni naturalnych - Kwarc Górski i Czarny Turmalin z zawieszką.png" class="active">
-
-    <button class="arrow left" onclick="prev(this.parentElement)">⬅</button>
-    <button class="arrow right" onclick="next(this.parentElement)">➡</button>
-  </div>
-
-  <div class="product-name">
-    ⚪⚫🪙 Naszyjnik z kamieni naturalnych – Kwarc Górski i Czarny Turmalin 🪙⚫⚪
-  </div>
-
-  <div class="product-desc">
-    Elegancki naszyjnik wykonany z:<br>
-    Kwarcu Górskiego 🤍<br>
-    Czarnego Turmalinu 🖤<br><br>
-
-    Ozdobiony monetami celtyckimi 🍀 oraz zawieszką monety celtyckiej ✨,<br>
-    na srebrnym lub złotym metalu jubilerskim.
-  </div>
-
-  <div class="price">25 zł</div>
-
-  <button class="btn" onclick="toggleContact(this)">Kup teraz</button>
-  <div class="contact-box">
-    <button onclick="wa('Turmalin 25zl')">WhatsApp</button>
-    <button onclick="sms('Turmalin 25zl')">SMS</button>
-    <button onclick="mail('Turmalin 25zl')">Email</button>
-  </div>
-</div>
-
-<div class="product">
-  <div class="slider">
-    <img src="Bransoletka z kamieni naturalnych – Czarny Turmalin i Fioletowy Jadeit1.png" class="active">
-    <img src="Bransoletka z kamieni naturalnych – Czarny Turmalin i Fioletowy Jadeit2.png">
-    <img src="Bransoletka z kamieni naturalnych – Czarny Turmalin i Fioletowy Jadeit3.png">
-
-    <button class="arrow left" onclick="prev(this.parentElement)">⬅</button>
-    <button class="arrow right" onclick="next(this.parentElement)">➡</button>
-  </div>
-
-  <div class="product-name">
-    💫🟣⚫ Bransoletka z kamieni naturalnych – Czarny Turmalin i Fioletowy Jadeit ⚫🟣💫
-  </div>
-
-  <div class="product-desc">
-    Elegancka bransoletka wykonana z:<br>
-    Czarnego Turmalinu 🖤<br>
-    Fioletowego Jadeitu 💜<br><br>
-
-    Ozdobiona zawieszką spirali gwiazd ✨🌌,<br>
-    na srebrnym metalu jubilerskim.
-  </div>
-
-  <div class="price">15 zł</div>
-
-  <button class="btn" onclick="toggleContact(this)">Kup teraz</button>
-  <div class="contact-box">
-    <button onclick="wa('Turmalin Jadeit 15zl')">WhatsApp</button>
-    <button onclick="sms('Turmalin Jadeit 15zl')">SMS</button>
-    <button onclick="mail('Turmalin Jadeit 15zl')">Email</button>
-  </div>
-</div>
-
-<div class="product">
-  <div class="slider">
-    <img src="Naszyjnik z kamieni naturalnych – Biały Hematyt i Ametyst.png" class="active">
-
-    <button class="arrow left" onclick="prev(this.parentElement)">⬅</button>
-    <button class="arrow right" onclick="next(this.parentElement)">➡</button>
-  </div>
-
-  <div class="product-name">
-    🏵️🍂⚪🟣 Naszyjnik z kamieni naturalnych – Biały Hematyt i Ametyst 🟣⚪🍂🏵️
-  </div>
-
-  <div class="product-desc">
-    Elegancki naszyjnik wykonany z:<br>
-    Białego Hematytu 🤍<br>
-    Ametystu 💜<br><br>
-
-    Ozdobiony zawieszką rozetki ✨, złotymi liśćmi 🌿 i delikatnymi ozdobnymi łańcuszkami 💫,<br>
-    na złotym metalu jubilerskim.
-  </div>
-
-  <div class="price">40 zł</div>
-
-  <button class="btn" onclick="toggleContact(this)">Kup teraz</button>
-  <div class="contact-box">
-    <button onclick="wa('Ametyst 40zl')">WhatsApp</button>
-    <button onclick="sms('Ametyst 40zl')">SMS</button>
-    <button onclick="mail('Ametyst 40zl')">Email</button>
-  </div>
-</div>
-
-<div class="product">
-  <div class="slider">
-    <img src="Bransoletka czerwony koral.png" class="active">
-    <img src="Bransoletka czerwony koral2.png">
-    <img src="Bransoletka czerwony koral3.png">
-
-    <button class="arrow left" onclick="prev(this.parentElement)">⬅</button>
-    <button class="arrow right" onclick="next(this.parentElement)">➡</button>
-  </div>
-
-  <div class="product-name">
-    🔴 Bransoletka – Czerwony Koral 🔴
-  </div>
-
-  <div class="product-desc">
-    Bransoletka z złotego metalu jubilerskiego opleciona koralami i złotymi dodatkami.<br><br>
-
-    Każdy element został wykonany ręcznie, dzięki czemu zestaw jest unikalny i niepowtarzalny.<br><br>
-
-    Idealny na prezent 🎁 lub jako stylowy dodatek na co dzień.
-  </div>
-
-  <div class="price">20 zł</div>
-
-  <button class="btn" onclick="toggleContact(this)">Kup teraz</button>
-  <div class="contact-box">
-    <button onclick="wa('Czerwony Koral 20zl')">WhatsApp</button>
-    <button onclick="sms('Czerwony Koral 20zl')">SMS</button>
-    <button onclick="mail('Czerwony Koral 20zl')">Email</button>
-  </div>
-</div>
